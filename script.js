@@ -1,7 +1,10 @@
 const navbar = document.getElementById('navbar');
 const navmenu = document.getElementById('nav-menu');
 const hambutger = document.getElementById('hamburger')
-
+const text2 = document.getElementById('text2')
+const text2containt = document.getElementsByClassName('text2containt')
+const text4 = document.getElementById('text4')
+const text4containt = document.getElementsByClassName('text4containt')
 
 window.addEventListener('scroll',()=>{
     if (window.scrollY > 50){
@@ -39,4 +42,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
             target.scrollIntoView({behavior:'smooth',block: 'start'});
         }
     });
+});
+
+
+text2.addEventListener('mouseenter',()=>{
+    for(let i = 0; i<text2containt.length; i++){
+        text2containt[i].style.display = 'flex' ;
+    }
+});
+
+text2.addEventListener('mouseleave',()=>{
+    for(let i = 0; i<text2containt.length; i++){
+        text2containt[i].style.display = 'none' ;
+    }
+});
+
+text4.addEventListener('mouseenter',()=>{
+    for(let i = 0; i<text4containt.length; i++){
+        text4containt[i].style.display = 'flex' ;
+    }
+});
+
+text4.addEventListener('mouseleave',()=>{
+    for(let i = 0; i<text4containt.length; i++){
+        text4containt[i].style.display = 'none' ;
+    }
 });

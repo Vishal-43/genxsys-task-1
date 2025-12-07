@@ -15,7 +15,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(0, 140, 255, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: all 0.3s ease;
@@ -30,7 +30,7 @@ body{
 }
 
 .navbar.scrolled{
-    background: rgba(20, 20, 70, 0.95);
+    background: rgba(162, 0, 255, 0.95);
     backdrop-filter: blur(10px);
 
 }
@@ -116,7 +116,81 @@ body{
 }
 
 .hero-section{
-    background-color: #000000;
+    background:linear-gradient(rgb(0, 132, 255),rgb(70, 172, 255),rgb(230, 210, 255));
+    height: 100vh;
+    color: white; 
+}
+
+.hero-content{
+    text-align: left;
+
+    font-family: 'Spicy Rice',serif;
+    padding-top: 30vh;
+    padding-left: 0.5%;
+    font-size: 30px;
+
+}
+
+.text2{
+    color: rgb(180, 228, 255);
+    font-family: 'Spicy Rice',serif;
+    font-size: 70px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    transform-origin:center ;
+    transform: rotateX(90);
+    display: inline-block;
+}
+
+.text4{
+   color: rgb(223, 183, 255);
+    font-family: 'Spicy Rice',serif;
+    font-size: 70px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    transform-origin:center ;
+    transform: rotateX(90);
+    display: inline-block; 
+}
+
+.text2containt {
+    display: none;
+    font-size: medium;
+    font-weight: bold;
+   
+
+}
+
+.text4containt{
+    display: none;
+    font-size: medium;
+    font-weight: bold;
+    transform: rotateX(90);
+    transform-origin: center;
+}
+
+.text2:hover{
+    color: white;
+    font-family: 'Spicy Rice',serif;
+    font-size: 60px;
+}
+
+.text4:hover{
+    color: white;
+    font-family: 'Spicy Rice',serif;
+    font-size: 60px;
+}
+
+.information{
+    width: 70vh;
+    font-size: medium;
+    color: rgb(186, 245, 255);
+}
+
+.about-section{
+    background:linear-gradient(rgb(230, 210, 255),rgb(159, 56, 255),rgb(162, 0, 255));
+    height: 100vh;
+    color: white; 
 }
 
 @media(max-width:768px){
@@ -130,6 +204,7 @@ body{
         text-align: center;
         transition: 0.3s;
         padding: 2rem 0;
+
 
     }
     .nav-menu.active{left:0;}
